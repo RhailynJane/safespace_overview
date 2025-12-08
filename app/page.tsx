@@ -143,13 +143,13 @@ export default function Home() {
             </div>
 
             <div className="grid md:grid-cols-3 gap-6">
-              <Card className="border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-xl bg-card">
+              <Card className="border border-red-200/40 bg-gradient-to-br from-red-50/80 to-rose-50/60 hover:border-red-300/60 transition-all duration-300 hover:shadow-xl">
                 <CardContent className="pt-6">
                   <div className="w-12 h-12 rounded-xl bg-destructive/10 flex items-center justify-center mb-4">
                     <AlertCircle className="w-6 h-6 text-destructive" />
                   </div>
-                  <h3 className="font-semibold text-lg mb-2 text-card-foreground">Fragmented Access</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
+                  <h3 className="font-semibold text-lg mb-2 text-slate-900">Fragmented Access</h3>
+                  <p className="text-slate-600 text-sm leading-relaxed">
                     Users miss early signals and struggle to connect patterns between stressors and mood. Long wait
                     times and limited availability make accessing qualified support difficult—especially in crisis
                     moments.
@@ -157,26 +157,26 @@ export default function Home() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-xl bg-card">
+              <Card className="border border-red-200/40 bg-gradient-to-br from-red-50/80 to-rose-50/60 hover:border-red-300/60 transition-all duration-300 hover:shadow-xl">
                 <CardContent className="pt-6">
                   <div className="w-12 h-12 rounded-xl bg-destructive/10 flex items-center justify-center mb-4">
                     <Lock className="w-6 h-6 text-destructive" />
                   </div>
-                  <h3 className="font-semibold text-lg mb-2 text-card-foreground">Privacy Concerns</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
+                  <h3 className="font-semibold text-lg mb-2 text-slate-900">Privacy Concerns</h3>
+                  <p className="text-slate-600 text-sm leading-relaxed">
                     Fear of stigma and lack of secure, confidential platforms prevent people from seeking help. Privacy
                     concerns reduce sustained engagement with mental health resources.
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-xl bg-card">
+              <Card className="border border-red-200/40 bg-gradient-to-br from-red-50/80 to-rose-50/60 hover:border-red-300/60 transition-all duration-300 hover:shadow-xl">
                 <CardContent className="pt-6">
                   <div className="w-12 h-12 rounded-xl bg-destructive/10 flex items-center justify-center mb-4">
                     <Users className="w-6 h-6 text-destructive" />
                   </div>
-                  <h3 className="font-semibold text-lg mb-2 text-card-foreground">Disconnected Care</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
+                  <h3 className="font-semibold text-lg mb-2 text-slate-900">Disconnected Care</h3>
+                  <p className="text-slate-600 text-sm leading-relaxed">
                     Lack of contextual sharing between users and support workers makes it hard to track progress, manage
                     appointments, and maintain consistent care relationships over time.
                   </p>
@@ -210,7 +210,7 @@ export default function Home() {
                 <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-4 shadow-sm">
                   <Brain className="w-7 h-7 text-primary" />
                 </div>
-                <h3 className="font-semibold text-xl mb-3 text-card-foreground">AI-Powered Insights</h3>
+                <h3 className="font-semibold text-xl mb-3 text-slate-900">AI-Powered Insights</h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   Track moods, journal thoughts, and receive intelligent pattern recognition. AI transforms raw daily
                   inputs into gentle insights about triggers, trends, and emotional well-being.
@@ -237,7 +237,7 @@ export default function Home() {
                 <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-4 shadow-sm">
                   <Video className="w-7 h-7 text-primary" />
                 </div>
-                <h3 className="font-semibold text-xl mb-3 text-card-foreground">Secure Consultations</h3>
+                <h3 className="font-semibold text-xl mb-3 text-slate-900">Secure Consultations</h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   HIPAA & PIPEDA compliant video therapy with licensed professionals. Book appointments, maintain
                   session notes, and ensure continuity of care—all protected by end-to-end encryption.
@@ -264,7 +264,7 @@ export default function Home() {
                 <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-4 shadow-sm">
                   <Users className="w-7 h-7 text-primary" />
                 </div>
-                <h3 className="font-semibold text-xl mb-3 text-card-foreground">Community & Peer Support</h3>
+                <h3 className="font-semibold text-xl mb-3 text-slate-900">Community & Peer Support</h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   Connect with others in moderated forums designed for safe sharing. Reduce isolation through peer
                   interaction while maintaining privacy and professional oversight.
@@ -291,7 +291,7 @@ export default function Home() {
                 <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-4 shadow-sm">
                   <MessageCircle className="w-7 h-7 text-primary" />
                 </div>
-                <h3 className="font-semibold text-xl mb-3 text-card-foreground">Crisis Resources</h3>
+                <h3 className="font-semibold text-xl mb-3 text-slate-900">Crisis Resources</h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   Immediate access to crisis hotlines, emergency contacts, and grounding exercises. Real-time risk
                   assessment with automated escalation when needed most.
@@ -337,49 +337,57 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-foreground">Mood Tracking & AI Analysis</h3>
               </div>
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-                <Card className="border border-border/50 bg-card hover:shadow-lg transition-shadow">
-                  <CardContent className="pt-6">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                      <Brain className="w-5 h-5 text-primary" />
+                <Card className="bg-gradient-to-br from-blue-50/80 to-cyan-50/60 hover:shadow-lg transition-all duration-300">
+                  <CardContent className="pt-6 text-center">
+                    <div className="flex justify-center mb-3">
+                      <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white shadow-lg">
+                        <Brain className="w-5 h-5" />
+                      </div>
                     </div>
-                    <h4 className="font-semibold mb-2 text-card-foreground">AI Risk Analysis</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <h4 className="font-semibold mb-2 text-slate-900">AI Risk Analysis</h4>
+                    <p className="text-sm text-slate-600 leading-relaxed">
                       Real-time risk assessment with automated alerts for concerning patterns and early intervention
                     </p>
                   </CardContent>
                 </Card>
 
-                <Card className="border border-border/50 bg-card hover:shadow-lg transition-shadow">
-                  <CardContent className="pt-6">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                      <BarChart3 className="w-5 h-5 text-primary" />
+                <Card className="bg-gradient-to-br from-purple-50/80 to-pink-50/60 hover:shadow-lg transition-all duration-300">
+                  <CardContent className="pt-6 text-center">
+                    <div className="flex justify-center mb-3">
+                      <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center text-white shadow-lg">
+                        <BarChart3 className="w-5 h-5" />
+                      </div>
                     </div>
-                    <h4 className="font-semibold mb-2 text-card-foreground">Freud Score</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <h4 className="font-semibold mb-2 text-slate-900">Freud Score</h4>
+                    <p className="text-sm text-slate-600 leading-relaxed">
                       Personalized mental wellness score calculated from mood patterns and engagement metrics
                     </p>
                   </CardContent>
                 </Card>
 
-                <Card className="border border-border/50 bg-card hover:shadow-lg transition-shadow">
-                  <CardContent className="pt-6">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                      <BarChart3 className="w-5 h-5 text-primary" />
+                <Card className="bg-gradient-to-br from-orange-50/80 to-yellow-50/60 hover:shadow-lg transition-all duration-300">
+                  <CardContent className="pt-6 text-center">
+                    <div className="flex justify-center mb-3">
+                      <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-white shadow-lg">
+                        <BarChart3 className="w-5 h-5" />
+                      </div>
                     </div>
-                    <h4 className="font-semibold mb-2 text-card-foreground">Mood Distribution</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <h4 className="font-semibold mb-2 text-slate-900">Mood Distribution</h4>
+                    <p className="text-sm text-slate-600 leading-relaxed">
                       Visual analytics showing emotion frequency across days, weeks, and months
                     </p>
                   </CardContent>
                 </Card>
 
-                <Card className="border border-border/50 bg-card hover:shadow-lg transition-shadow">
-                  <CardContent className="pt-6">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                      <Sparkles className="w-5 h-5 text-primary" />
+                <Card className="bg-gradient-to-br from-indigo-50/80 to-blue-50/60 hover:shadow-lg transition-all duration-300">
+                  <CardContent className="pt-6 text-center">
+                    <div className="flex justify-center mb-3">
+                      <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-indigo-500 to-indigo-600 flex items-center justify-center text-white shadow-lg">
+                        <Sparkles className="w-5 h-5" />
+                      </div>
                     </div>
-                    <h4 className="font-semibold mb-2 text-card-foreground">Mood Predictions</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <h4 className="font-semibold mb-2 text-slate-900">Mood Predictions</h4>
+                    <p className="text-sm text-slate-600 leading-relaxed">
                       AI-powered forecasting to anticipate mood shifts based on historical patterns
                     </p>
                   </CardContent>
@@ -396,61 +404,71 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-foreground">Smart Journaling</h3>
               </div>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <Card className="border border-border/50 bg-card hover:shadow-lg transition-shadow">
-                  <CardContent className="pt-6">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                      <FileText className="w-5 h-5 text-primary" />
+                <Card className="bg-gradient-to-br from-blue-50/80 to-cyan-50/60 hover:shadow-lg transition-all duration-300">
+                  <CardContent className="pt-6 text-center">
+                    <div className="flex justify-center mb-3">
+                      <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white shadow-lg">
+                        <FileText className="w-5 h-5" />
+                      </div>
                     </div>
-                    <h4 className="font-semibold mb-2 text-card-foreground">Multiple Templates</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <h4 className="font-semibold mb-2 text-slate-900">Multiple Templates</h4>
+                    <p className="text-sm text-slate-600 leading-relaxed">
                       Guided prompts for gratitude, CBT, daily reflection, stress management, and goal setting
                     </p>
                   </CardContent>
                 </Card>
 
-                <Card className="border border-border/50 bg-card hover:shadow-lg transition-shadow">
-                  <CardContent className="pt-6">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                      <Calendar className="w-5 h-5 text-primary" />
+                <Card className="bg-gradient-to-br from-purple-50/80 to-pink-50/60 hover:shadow-lg transition-all duration-300">
+                  <CardContent className="pt-6 text-center">
+                    <div className="flex justify-center mb-3">
+                      <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center text-white shadow-lg">
+                        <Calendar className="w-5 h-5" />
+                      </div>
                     </div>
-                    <h4 className="font-semibold mb-2 text-card-foreground">History & Statistics</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <h4 className="font-semibold mb-2 text-slate-900">History & Statistics</h4>
+                    <p className="text-sm text-slate-600 leading-relaxed">
                       Complete journal history with writing streaks, word counts, and engagement trends
                     </p>
                   </CardContent>
                 </Card>
 
-                <Card className="border border-border/50 bg-card hover:shadow-lg transition-shadow">
-                  <CardContent className="pt-6">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                      <Brain className="w-5 h-5 text-primary" />
+                <Card className="bg-gradient-to-br from-green-50/80 to-emerald-50/60 hover:shadow-lg transition-all duration-300">
+                  <CardContent className="pt-6 text-center">
+                    <div className="flex justify-center mb-3">
+                      <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center text-white shadow-lg">
+                        <Brain className="w-5 h-5" />
+                      </div>
                     </div>
-                    <h4 className="font-semibold mb-2 text-card-foreground">Journal Insights</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <h4 className="font-semibold mb-2 text-slate-900">Journal Insights</h4>
+                    <p className="text-sm text-slate-600 leading-relaxed">
                       AI-generated summaries highlighting recurring themes and emotional patterns
                     </p>
                   </CardContent>
                 </Card>
 
-                <Card className="border border-border/50 bg-card hover:shadow-lg transition-shadow">
-                  <CardContent className="pt-6">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                      <Heart className="w-5 h-5 text-primary" />
+                <Card className="bg-gradient-to-br from-red-50/80 to-rose-50/60 hover:shadow-lg transition-all duration-300">
+                  <CardContent className="pt-6 text-center">
+                    <div className="flex justify-center mb-3">
+                      <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center text-white shadow-lg">
+                        <Heart className="w-5 h-5" />
+                      </div>
                     </div>
-                    <h4 className="font-semibold mb-2 text-card-foreground">Sentiment Analysis</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <h4 className="font-semibold mb-2 text-slate-900">Sentiment Analysis</h4>
+                    <p className="text-sm text-slate-600 leading-relaxed">
                       Track emotional tone over time with positive, neutral, and negative sentiment scoring
                     </p>
                   </CardContent>
                 </Card>
 
-                <Card className="border border-border/50 bg-card hover:shadow-lg transition-shadow">
-                  <CardContent className="pt-6">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                      <TrendingUp className="w-5 h-5 text-primary" />
+                <Card className="bg-gradient-to-br from-orange-50/80 to-yellow-50/60 hover:shadow-lg transition-all duration-300">
+                  <CardContent className="pt-6 text-center">
+                    <div className="flex justify-center mb-3">
+                      <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-white shadow-lg">
+                        <TrendingUp className="w-5 h-5" />
+                      </div>
                     </div>
-                    <h4 className="font-semibold mb-2 text-card-foreground">AI Trend Analysis</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <h4 className="font-semibold mb-2 text-slate-900">AI Trend Analysis</h4>
+                    <p className="text-sm text-slate-600 leading-relaxed">
                       Identify emotional triggers, growth areas, and breakthrough moments in your writing
                     </p>
                   </CardContent>
@@ -467,67 +485,75 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-foreground">Crisis Support & Coping Strategies</h3>
               </div>
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-                <Card className="border border-destructive/20 bg-card hover:shadow-lg transition-shadow">
-                  <CardContent className="pt-6">
-                    <div className="w-10 h-10 rounded-lg bg-destructive/10 flex items-center justify-center mb-3">
-                      <Phone className="w-5 h-5 text-destructive" />
+                <Card className="bg-gradient-to-br from-red-50/80 to-rose-50/60 hover:shadow-lg transition-all duration-300">
+                  <CardContent className="pt-6 text-center">
+                    <div className="flex justify-center mb-3">
+                      <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center text-white shadow-lg">
+                        <Phone className="w-5 h-5" />
+                      </div>
                     </div>
-                    <h4 className="font-semibold mb-2 text-card-foreground">Emergency Hotlines</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                    <h4 className="font-semibold mb-2 text-slate-900">Emergency Hotlines</h4>
+                    <p className="text-sm text-slate-600 leading-relaxed mb-3">
                       One-tap access to crisis support lines
                     </p>
-                    <ul className="space-y-1 text-xs text-muted-foreground">
+                    <ul className="space-y-1 text-xs text-slate-600">
                       <li className="flex items-center gap-2">
-                        <div className="w-1 h-1 rounded-full bg-destructive" />
+                        <div className="w-1 h-1 rounded-full bg-slate-400" />
                         911 - Emergency Services
                       </li>
                       <li className="flex items-center gap-2">
-                        <div className="w-1 h-1 rounded-full bg-destructive" />
+                        <div className="w-1 h-1 rounded-full bg-slate-400" />
                         988 - Suicide & Crisis Lifeline
                       </li>
                       <li className="flex items-center gap-2">
-                        <div className="w-1 h-1 rounded-full bg-destructive" />
+                        <div className="w-1 h-1 rounded-full bg-slate-400" />
                         Kids Help Phone
                       </li>
                       <li className="flex items-center gap-2">
-                        <div className="w-1 h-1 rounded-full bg-destructive" />
+                        <div className="w-1 h-1 rounded-full bg-slate-400" />
                         Distress Centre
                       </li>
                     </ul>
                   </CardContent>
                 </Card>
 
-                <Card className="border border-border/50 bg-card hover:shadow-lg transition-shadow">
-                  <CardContent className="pt-6">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                      <Wind className="w-5 h-5 text-primary" />
+                <Card className="bg-gradient-to-br from-cyan-50/80 to-teal-50/60 hover:shadow-lg transition-all duration-300">
+                  <CardContent className="pt-6 text-center">
+                    <div className="flex justify-center mb-3">
+                      <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500 to-cyan-600 flex items-center justify-center text-white shadow-lg">
+                        <Wind className="w-5 h-5" />
+                      </div>
                     </div>
-                    <h4 className="font-semibold mb-2 text-card-foreground">Box Breathing</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <h4 className="font-semibold mb-2 text-slate-900">Box Breathing</h4>
+                    <p className="text-sm text-slate-600 leading-relaxed">
                       4-4-4-4 guided breathing exercise with visual animations to reduce anxiety instantly
                     </p>
                   </CardContent>
                 </Card>
 
-                <Card className="border border-border/50 bg-card hover:shadow-lg transition-shadow">
-                  <CardContent className="pt-6">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                      <Timer className="w-5 h-5 text-primary" />
+                <Card className="bg-gradient-to-br from-amber-50/80 to-orange-50/60 hover:shadow-lg transition-all duration-300">
+                  <CardContent className="pt-6 text-center">
+                    <div className="flex justify-center mb-3">
+                      <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center text-white shadow-lg">
+                        <Timer className="w-5 h-5" />
+                      </div>
                     </div>
-                    <h4 className="font-semibold mb-2 text-card-foreground">Focus Timer</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <h4 className="font-semibold mb-2 text-slate-900">Focus Timer</h4>
+                    <p className="text-sm text-slate-600 leading-relaxed">
                       Mindfulness timer with calming sounds to help center yourself during stressful moments
                     </p>
                   </CardContent>
                 </Card>
 
-                <Card className="border border-border/50 bg-card hover:shadow-lg transition-shadow">
-                  <CardContent className="pt-6">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                      <Eye className="w-5 h-5 text-primary" />
+                <Card className="bg-gradient-to-br from-green-50/80 to-emerald-50/60 hover:shadow-lg transition-all duration-300">
+                  <CardContent className="pt-6 text-center">
+                    <div className="flex justify-center mb-3">
+                      <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center text-white shadow-lg">
+                        <Eye className="w-5 h-5" />
+                      </div>
                     </div>
-                    <h4 className="font-semibold mb-2 text-card-foreground">5-4-3-2-1 Grounding</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <h4 className="font-semibold mb-2 text-slate-900">5-4-3-2-1 Grounding</h4>
+                    <p className="text-sm text-slate-600 leading-relaxed">
                       Sensory grounding technique to bring you back to the present during panic or dissociation
                     </p>
                   </CardContent>
@@ -543,74 +569,86 @@ export default function Home() {
                 </div>
                 <h3 className="text-2xl font-bold text-foreground">Communication & Resources</h3>
               </div>
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-                <Card className="border border-border/50 bg-card hover:shadow-lg transition-shadow">
-                  <CardContent className="pt-6">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                      <Send className="w-5 h-5 text-primary" />
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <Card className="bg-gradient-to-br from-blue-50/80 to-cyan-50/60 hover:shadow-lg transition-all duration-300">
+                  <CardContent className="pt-6 text-center">
+                    <div className="flex justify-center mb-3">
+                      <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white shadow-lg">
+                        <Send className="w-5 h-5" />
+                      </div>
                     </div>
-                    <h4 className="font-semibold mb-2 text-card-foreground">Peer Messaging</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <h4 className="font-semibold mb-2 text-slate-900">Peer Messaging</h4>
+                    <p className="text-sm text-slate-600 leading-relaxed">
                       Secure, encrypted messaging with other users for support and connection
                     </p>
                   </CardContent>
                 </Card>
 
-                <Card className="border border-border/50 bg-card hover:shadow-lg transition-shadow">
-                  <CardContent className="pt-6">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                      <Video className="w-5 h-5 text-primary" />
+                <Card className="bg-gradient-to-br from-purple-50/80 to-pink-50/60 hover:shadow-lg transition-all duration-300">
+                  <CardContent className="pt-6 text-center">
+                    <div className="flex justify-center mb-3">
+                      <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center text-white shadow-lg">
+                        <Video className="w-5 h-5" />
+                      </div>
                     </div>
-                    <h4 className="font-semibold mb-2 text-card-foreground">Video Consultations</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <h4 className="font-semibold mb-2 text-slate-900">Video Consultations</h4>
+                    <p className="text-sm text-slate-600 leading-relaxed">
                       Book and attend therapy sessions with licensed professionals via secure video calls
                     </p>
                   </CardContent>
                 </Card>
 
-                <Card className="border border-border/50 bg-card hover:shadow-lg transition-shadow">
-                  <CardContent className="pt-6">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                      <FileText className="w-5 h-5 text-primary" />
+                <Card className="bg-gradient-to-br from-green-50/80 to-emerald-50/60 hover:shadow-lg transition-all duration-300">
+                  <CardContent className="pt-6 text-center">
+                    <div className="flex justify-center mb-3">
+                      <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center text-white shadow-lg">
+                        <FileText className="w-5 h-5" />
+                      </div>
                     </div>
-                    <h4 className="font-semibold mb-2 text-card-foreground">Resource Library</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <h4 className="font-semibold mb-2 text-slate-900">Resource Library</h4>
+                    <p className="text-sm text-slate-600 leading-relaxed">
                       Curated articles, videos, and guides on mental health topics with personalized recommendations
                     </p>
                   </CardContent>
                 </Card>
 
-                <Card className="border border-border/50 bg-card hover:shadow-lg transition-shadow">
-                  <CardContent className="pt-6">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                      <Megaphone className="w-5 h-5 text-primary" />
+                <Card className="bg-gradient-to-br from-orange-50/80 to-yellow-50/60 hover:shadow-lg transition-all duration-300">
+                  <CardContent className="pt-6 text-center">
+                    <div className="flex justify-center mb-3">
+                      <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-white shadow-lg">
+                        <Megaphone className="w-5 h-5" />
+                      </div>
                     </div>
-                    <h4 className="font-semibold mb-2 text-card-foreground">Org Announcements</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <h4 className="font-semibold mb-2 text-slate-900">Org Announcements</h4>
+                    <p className="text-sm text-slate-600 leading-relaxed">
                       Stay updated with news, events, and resources from mental health organizations
                     </p>
                   </CardContent>
                 </Card>
 
-                <Card className="border border-border/50 bg-card hover:shadow-lg transition-shadow">
-                  <CardContent className="pt-6">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                      <Users className="w-5 h-5 text-primary" />
+                <Card className="bg-gradient-to-br from-indigo-50/80 to-blue-50/60 hover:shadow-lg transition-all duration-300">
+                  <CardContent className="pt-6 text-center">
+                    <div className="flex justify-center mb-3">
+                      <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-indigo-500 to-indigo-600 flex items-center justify-center text-white shadow-lg">
+                        <Users className="w-5 h-5" />
+                      </div>
                     </div>
-                    <h4 className="font-semibold mb-2 text-card-foreground">Community Forum</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <h4 className="font-semibold mb-2 text-slate-900">Community Forum</h4>
+                    <p className="text-sm text-slate-600 leading-relaxed">
                       Join moderated discussions with peers on various mental health topics
                     </p>
                   </CardContent>
                 </Card>
 
-                <Card className="border border-border/50 bg-card hover:shadow-lg transition-shadow">
-                  <CardContent className="pt-6">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                      <Calendar className="w-5 h-5 text-primary" />
+                <Card className="bg-gradient-to-br from-red-50/80 to-rose-50/60 hover:shadow-lg transition-all duration-300">
+                  <CardContent className="pt-6 text-center">
+                    <div className="flex justify-center mb-3">
+                      <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center text-white shadow-lg">
+                        <Calendar className="w-5 h-5" />
+                      </div>
                     </div>
-                    <h4 className="font-semibold mb-2 text-card-foreground">Appointments</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <h4 className="font-semibold mb-2 text-slate-900">Appointments</h4>
+                    <p className="text-sm text-slate-600 leading-relaxed">
                       Schedule, manage, and track therapy sessions with automated reminders
                     </p>
                   </CardContent>
@@ -627,37 +665,41 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-foreground">Personalization & Settings</h3>
               </div>
               <div className="grid md:grid-cols-3 gap-4">
-                <Card className="border border-border/50 bg-card hover:shadow-lg transition-shadow">
-                  <CardContent className="pt-6">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                      <Moon className="w-5 h-5 text-primary" />
+                <Card className="bg-gradient-to-br from-blue-50/80 to-cyan-50/60 hover:shadow-lg transition-all duration-300">
+                  <CardContent className="pt-6 text-center">
+                    <div className="flex justify-center mb-3">
+                      <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white shadow-lg">
+                        <Moon className="w-5 h-5" />
+                      </div>
                     </div>
-                    <h4 className="font-semibold mb-2 text-card-foreground">Dark Mode</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <h4 className="font-semibold mb-2 text-slate-900">Dark Mode</h4>
+                    <p className="text-sm text-slate-600 leading-relaxed">
                       Switch between light and dark themes for comfortable viewing in any environment
                     </p>
                   </CardContent>
                 </Card>
 
-                <Card className="border border-border/50 bg-card hover:shadow-lg transition-shadow">
-                  <CardContent className="pt-6">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                      <Type className="w-5 h-5 text-primary" />
+                <Card className="bg-gradient-to-br from-amber-50/80 to-orange-50/60 hover:shadow-lg transition-all duration-300">
+                  <CardContent className="pt-6 text-center">
+                    <div className="flex justify-center mb-3">
+                      <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center text-white shadow-lg">
+                        <Type className="w-5 h-5" />
+                      </div>
                     </div>
-                    <h4 className="font-semibold mb-2 text-card-foreground">Text Size Control</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <h4 className="font-semibold mb-2 text-slate-900">Text Size Control</h4>
+                    <p className="text-sm text-slate-600 leading-relaxed">
                       Adjust font size for better readability and accessibility preferences
                     </p>
                   </CardContent>
                 </Card>
 
-                <Card className="border border-border/50 bg-card hover:shadow-lg transition-shadow">
+                <Card className="bg-gradient-to-br from-blue-50/80 to-cyan-50/60 border-blue-200/40">
                   <CardContent className="pt-6">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                      <Bell className="w-5 h-5 text-primary" />
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center mb-3 text-white shadow-lg">
+                      <Bell className="w-5 h-5" />
                     </div>
-                    <h4 className="font-semibold mb-2 text-card-foreground">Notification Settings</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <h4 className="font-semibold mb-2 text-slate-900">Notification Settings</h4>
+                    <p className="text-sm text-slate-600 leading-relaxed">
                       Customize alerts for appointments, messages, and mood tracking reminders
                     </p>
                   </CardContent>
@@ -682,10 +724,10 @@ export default function Home() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <Card className="text-left border-2 border-border/50 hover:border-primary/40 transition-all duration-300 hover:shadow-xl bg-gradient-to-br from-card to-card/50">
+              <Card className="text-left border-2 border-border hover:border-border/80 transition-all duration-300 hover:shadow-lg bg-white">
                 <CardContent className="pt-8 pb-8">
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center mb-4 shadow-sm">
-                    <svg className="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <div className="w-14 h-14 rounded-xl bg-slate-100 flex items-center justify-center mb-4">
+                    <svg className="w-8 h-8 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -694,14 +736,14 @@ export default function Home() {
                       />
                     </svg>
                   </div>
-                  <h3 className="font-semibold text-2xl mb-3 text-card-foreground">Web Platform</h3>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <h3 className="font-semibold text-2xl mb-3 text-slate-900">Web Platform</h3>
+                  <p className="text-slate-600 mb-6 leading-relaxed">
                     Full-featured web application for organizations, support workers, and administrators. Comprehensive
                     client care management, scheduling, analytics, and monitoring dashboards.
                   </p>
                   <Button
                     variant="outline"
-                    className="w-full bg-transparent border-border hover:border-primary/50"
+                    className="w-full bg-transparent border-border hover:border-slate-400"
                     asChild
                   >
                     <a href="https://github.com/RhailynJane/SafeSpaceApp_Web" target="_blank" rel="noopener noreferrer">
@@ -718,10 +760,10 @@ export default function Home() {
                 </CardContent>
               </Card>
 
-              <Card className="text-left border-2 border-border/50 hover:border-primary/40 transition-all duration-300 hover:shadow-xl bg-gradient-to-br from-card to-card/50">
+              <Card className="text-left border-2 border-border hover:border-border/80 transition-all duration-300 hover:shadow-lg bg-white">
                 <CardContent className="pt-8 pb-8">
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center mb-4 shadow-sm">
-                    <svg className="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <div className="w-14 h-14 rounded-xl bg-slate-100 flex items-center justify-center mb-4">
+                    <svg className="w-8 h-8 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -730,14 +772,14 @@ export default function Home() {
                       />
                     </svg>
                   </div>
-                  <h3 className="font-semibold text-2xl mb-3 text-card-foreground">Mobile App</h3>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <h3 className="font-semibold text-2xl mb-3 text-slate-900">Mobile App</h3>
+                  <p className="text-slate-600 mb-6 leading-relaxed">
                     Cross-platform React Native app for iOS and Android. Daily mood tracking, journaling, video
                     consultations, community forums, and crisis resources—all in your pocket.
                   </p>
                   <Button
                     variant="outline"
-                    className="w-full bg-transparent border-border hover:border-primary/50"
+                    className="w-full bg-transparent border-border hover:border-slate-400"
                     asChild
                   >
                     <a
@@ -777,77 +819,89 @@ export default function Home() {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-              <Card className="border border-border/50 bg-card hover:shadow-lg transition-shadow">
-                <CardContent className="pt-6">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                    <Brain className="w-5 h-5 text-primary" />
+              <Card className="bg-gradient-to-br from-blue-50/80 to-cyan-50/60 hover:shadow-lg transition-all duration-300">
+                <CardContent className="pt-6 text-center">
+                  <div className="flex justify-center mb-3">
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white shadow-lg">
+                      <Brain className="w-5 h-5" />
+                    </div>
                   </div>
-                  <h4 className="font-semibold mb-2 text-card-foreground">Real-Time Sync</h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <h4 className="font-semibold mb-2 text-slate-900">Real-Time Sync</h4>
+                  <p className="text-sm text-slate-600 leading-relaxed">
                     Convex-powered real-time database with instant updates across all devices for moods, messages, and
                     appointments
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="border border-border/50 bg-card hover:shadow-lg transition-shadow">
-                <CardContent className="pt-6">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                    <Video className="w-5 h-5 text-primary" />
+              <Card className="bg-gradient-to-br from-cyan-50/80 to-teal-50/60 hover:shadow-lg transition-all duration-300">
+                <CardContent className="pt-6 text-center">
+                  <div className="flex justify-center mb-3">
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500 to-cyan-600 flex items-center justify-center text-white shadow-lg">
+                      <Video className="w-5 h-5" />
+                    </div>
                   </div>
-                  <h4 className="font-semibold mb-2 text-card-foreground">Video Calls</h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <h4 className="font-semibold mb-2 text-slate-900">Video Calls</h4>
+                  <p className="text-sm text-slate-600 leading-relaxed">
                     Sendbird Calls integration for HIPAA-compliant video consultations with licensed mental health
                     professionals
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="border border-border/50 bg-card hover:shadow-lg transition-shadow">
-                <CardContent className="pt-6">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                    <Shield className="w-5 h-5 text-primary" />
+              <Card className="bg-gradient-to-br from-green-50/80 to-emerald-50/60 hover:shadow-lg transition-all duration-300">
+                <CardContent className="pt-6 text-center">
+                  <div className="flex justify-center mb-3">
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center text-white shadow-lg">
+                      <Shield className="w-5 h-5" />
+                    </div>
                   </div>
-                  <h4 className="font-semibold mb-2 text-card-foreground">Clerk Authentication</h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <h4 className="font-semibold mb-2 text-slate-900">Clerk Authentication</h4>
+                  <p className="text-sm text-slate-600 leading-relaxed">
                     Secure multi-factor authentication with JWT tokens and organization support for CMHA partnerships
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="border border-border/50 bg-card hover:shadow-lg transition-shadow">
-                <CardContent className="pt-6">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                    <Bell className="w-5 h-5 text-primary" />
+              <Card className="bg-gradient-to-br from-orange-50/80 to-amber-50/60 hover:shadow-lg transition-all duration-300">
+                <CardContent className="pt-6 text-center">
+                  <div className="flex justify-center mb-3">
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-white shadow-lg">
+                      <Bell className="w-5 h-5" />
+                    </div>
                   </div>
-                  <h4 className="font-semibold mb-2 text-card-foreground">Push Notifications</h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <h4 className="font-semibold mb-2 text-slate-900">Push Notifications</h4>
+                  <p className="text-sm text-slate-600 leading-relaxed">
                     Expo Notifications with smart scheduling for appointment reminders, mood check-ins, and crisis
                     alerts
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="border border-border/50 bg-card hover:shadow-lg transition-shadow">
-                <CardContent className="pt-6">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                    <BarChart3 className="w-5 h-5 text-primary" />
+              <Card className="bg-gradient-to-br from-violet-50/80 to-purple-50/60 hover:shadow-lg transition-all duration-300">
+                <CardContent className="pt-6 text-center">
+                  <div className="flex justify-center mb-3">
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-violet-500 to-violet-600 flex items-center justify-center text-white shadow-lg">
+                      <BarChart3 className="w-5 h-5" />
+                    </div>
                   </div>
-                  <h4 className="font-semibold mb-2 text-card-foreground">Clinical Tools</h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    Integrated PHQ-9 and GAD-7 screening with progress tracking, results interpretation, and crisis
+                  <h4 className="font-semibold mb-2 text-slate-900">Clinical Assessment Tools</h4>
+                  <p className="text-sm text-slate-600 leading-relaxed">
+                    Standardized mental health screening with progress tracking, results interpretation, and crisis
                     detection
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="border border-border/50 bg-card hover:shadow-lg transition-shadow">
-                <CardContent className="pt-6">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                    <Users className="w-5 h-5 text-primary" />
+              <Card className="bg-gradient-to-br from-lime-50/80 to-green-50/60 hover:shadow-lg transition-all duration-300">
+                <CardContent className="pt-6 text-center">
+                  <div className="flex justify-center mb-3">
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-lime-500 to-lime-600 flex items-center justify-center text-white shadow-lg">
+                      <Users className="w-5 h-5" />
+                    </div>
                   </div>
-                  <h4 className="font-semibold mb-2 text-card-foreground">Organization Support</h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <h4 className="font-semibold mb-2 text-slate-900">Organization Support</h4>
+                  <p className="text-sm text-slate-600 leading-relaxed">
                     Multi-organization announcements from CMHA Calgary, Edmonton, and SAIT with tailored resources
                   </p>
                 </CardContent>
@@ -855,7 +909,7 @@ export default function Home() {
             </div>
 
             <div className="bg-card/50 border border-border/50 rounded-xl p-6">
-              <h4 className="font-semibold text-lg mb-4 text-card-foreground">Mobile Tech Stack</h4>
+              <h4 className="font-semibold text-lg mb-4 text-slate-900">Mobile Tech Stack</h4>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                 {[
                   "React Native 0.81.5",
@@ -895,76 +949,88 @@ export default function Home() {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-              <Card className="border border-border/50 bg-card hover:shadow-lg transition-shadow">
-                <CardContent className="pt-6">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                    <Users className="w-5 h-5 text-primary" />
+              <Card className="bg-gradient-to-br from-purple-50/80 to-violet-50/60 hover:shadow-lg transition-all duration-300">
+                <CardContent className="pt-6 text-center">
+                  <div className="flex justify-center mb-3">
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center text-white shadow-lg">
+                      <Users className="w-5 h-5" />
+                    </div>
                   </div>
-                  <h4 className="font-semibold mb-2 text-card-foreground">Client Management</h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <h4 className="font-semibold mb-2 text-slate-900">Client Management</h4>
+                  <p className="text-sm text-slate-600 leading-relaxed">
                     Comprehensive profiles with demographic, clinical info, risk tracking, and automated load balancing
                     for assignments
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="border border-border/50 bg-card hover:shadow-lg transition-shadow">
-                <CardContent className="pt-6">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                    <FileText className="w-5 h-5 text-primary" />
+              <Card className="bg-gradient-to-br from-blue-50/80 to-indigo-50/60 hover:shadow-lg transition-all duration-300">
+                <CardContent className="pt-6 text-center">
+                  <div className="flex justify-center mb-3">
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white shadow-lg">
+                      <FileText className="w-5 h-5" />
+                    </div>
                   </div>
-                  <h4 className="font-semibold mb-2 text-card-foreground">Session Notes</h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <h4 className="font-semibold mb-2 text-slate-900">Session Notes</h4>
+                  <p className="text-sm text-slate-600 leading-relaxed">
                     Structured documentation with activity tracking, risk assessment, and export to PDF and Word formats
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="border border-border/50 bg-card hover:shadow-lg transition-shadow">
-                <CardContent className="pt-6">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                    <Calendar className="w-5 h-5 text-primary" />
+              <Card className="bg-gradient-to-br from-pink-50/80 to-rose-50/60 hover:shadow-lg transition-all duration-300">
+                <CardContent className="pt-6 text-center">
+                  <div className="flex justify-center mb-3">
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-pink-500 to-pink-600 flex items-center justify-center text-white shadow-lg">
+                      <Calendar className="w-5 h-5" />
+                    </div>
                   </div>
-                  <h4 className="font-semibold mb-2 text-card-foreground">Advanced Scheduling</h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <h4 className="font-semibold mb-2 text-slate-900">Advanced Scheduling</h4>
+                  <p className="text-sm text-slate-600 leading-relaxed">
                     Visual calendar with availability management, conflict detection, and automated appointment
                     notifications
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="border border-border/50 bg-card hover:shadow-lg transition-shadow">
-                <CardContent className="pt-6">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                    <Send className="w-5 h-5 text-primary" />
+              <Card className="bg-gradient-to-br from-cyan-50/80 to-blue-50/60 hover:shadow-lg transition-all duration-300">
+                <CardContent className="pt-6 text-center">
+                  <div className="flex justify-center mb-3">
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500 to-cyan-600 flex items-center justify-center text-white shadow-lg">
+                      <Send className="w-5 h-5" />
+                    </div>
                   </div>
-                  <h4 className="font-semibold mb-2 text-card-foreground">Referral Processing</h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <h4 className="font-semibold mb-2 text-slate-900">Referral Processing</h4>
+                  <p className="text-sm text-slate-600 leading-relaxed">
                     Intake form workflow with team leader review, assignment tracking, and automated routing based on
                     org rules
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="border border-border/50 bg-card hover:shadow-lg transition-shadow">
-                <CardContent className="pt-6">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                    <BarChart3 className="w-5 h-5 text-primary" />
+              <Card className="bg-gradient-to-br from-amber-50/80 to-orange-50/60 hover:shadow-lg transition-all duration-300">
+                <CardContent className="pt-6 text-center">
+                  <div className="flex justify-center mb-3">
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center text-white shadow-lg">
+                      <BarChart3 className="w-5 h-5" />
+                    </div>
                   </div>
-                  <h4 className="font-semibold mb-2 text-card-foreground">Analytics Dashboard</h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <h4 className="font-semibold mb-2 text-slate-900">Analytics Dashboard</h4>
+                  <p className="text-sm text-slate-600 leading-relaxed">
                     Caseload summaries, session metrics, risk distribution analysis with custom date ranges and export
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="border border-border/50 bg-card hover:shadow-lg transition-shadow">
-                <CardContent className="pt-6">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                    <Shield className="w-5 h-5 text-primary" />
+              <Card className="bg-gradient-to-br from-green-50/80 to-teal-50/60 hover:shadow-lg transition-all duration-300">
+                <CardContent className="pt-6 text-center">
+                  <div className="flex justify-center mb-3">
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center text-white shadow-lg">
+                      <Shield className="w-5 h-5" />
+                    </div>
                   </div>
-                  <h4 className="font-semibold mb-2 text-card-foreground">Role-Based Access</h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <h4 className="font-semibold mb-2 text-slate-900">Role-Based Access</h4>
+                  <p className="text-sm text-slate-600 leading-relaxed">
                     Multi-tier permissions for support workers, team leaders, admins, and super admins with audit
                     logging
                   </p>
@@ -973,7 +1039,7 @@ export default function Home() {
             </div>
 
             <div className="bg-card/50 border border-border/50 rounded-xl p-6">
-              <h4 className="font-semibold text-lg mb-4 text-card-foreground">Web Tech Stack</h4>
+              <h4 className="font-semibold text-lg mb-4 text-slate-900">Web Tech Stack</h4>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                 {[
                   "Next.js 15",
@@ -1011,10 +1077,10 @@ export default function Home() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Rhailyn Jane Cona */}
-              <Card className="border border-border/50 bg-card hover:shadow-xl transition-all duration-300">
+              <Card className="bg-gradient-to-br from-indigo-50/80 to-blue-50/60 border-indigo-200/40 hover:shadow-xl transition-all duration-300">
                 <CardContent className="pt-6">
                   <div className="flex flex-col items-center text-center mb-4">
-                    <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center mb-4 overflow-hidden">
+                    <div className="w-24 h-24 rounded-full bg-gradient-to-br from-indigo-500/30 to-indigo-400/20 flex items-center justify-center mb-4 overflow-hidden">
                       <Image
                         src="/rhailyn.png"
                         alt="Rhailyn Jane Cona"
@@ -1024,7 +1090,7 @@ export default function Home() {
                         priority
                       />
                     </div>
-                    <h3 className="font-semibold text-xl text-card-foreground">Rhailyn Jane Cona</h3>
+                    <h3 className="font-semibold text-xl text-slate-900">Rhailyn Jane Cona</h3>
                     <div className="flex flex-wrap gap-2 justify-center mt-2 mb-3">
                       <Badge variant="secondary" className="text-xs">
                         Project Lead
@@ -1036,7 +1102,7 @@ export default function Home() {
                         UX/UI Designer
                       </Badge>
                     </div>
-                    <p className="text-sm text-muted-foreground mb-4">
+                    <p className="text-sm text-slate-600 mb-4">
                       Product Manager, Technical Lead, and Mobile Developer specializing in React Native architecture
                       and design systems
                     </p>
@@ -1114,10 +1180,10 @@ export default function Home() {
               </Card>
 
               {/* Anne Marie Ala */}
-              <Card className="border border-border/50 bg-card hover:shadow-xl transition-all duration-300">
+              <Card className="bg-gradient-to-br from-rose-50/80 to-pink-50/60 hover:shadow-xl transition-all duration-300">
                 <CardContent className="pt-6">
                   <div className="flex flex-col items-center text-center mb-4">
-                    <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center mb-4 overflow-hidden">
+                    <div className="w-24 h-24 rounded-full bg-gradient-to-br from-rose-500/30 to-rose-400/20 flex items-center justify-center mb-4 overflow-hidden">
                       <Image
                         src="/anne-marie.jpg"
                         alt="Anne Marie Ala"
@@ -1126,13 +1192,13 @@ export default function Home() {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h3 className="font-semibold text-xl text-card-foreground">Anne Marie Ala</h3>
+                    <h3 className="font-semibold text-xl text-slate-900">Anne Marie Ala</h3>
                     <div className="flex flex-wrap gap-2 justify-center mt-2 mb-3">
                       <Badge variant="secondary" className="text-xs">
                         Mobile Developer
                       </Badge>
                     </div>
-                    <p className="text-sm text-muted-foreground mb-4">
+                    <p className="text-sm text-slate-600 mb-4">
                       Mobile Developer specializing in React Native UI components, state management, and API integration
                     </p>
                   </div>
@@ -1209,10 +1275,10 @@ export default function Home() {
               </Card>
 
               {/* Merilyne Mbong */}
-              <Card className="border border-border/50 bg-card hover:shadow-xl transition-all duration-300">
+              <Card className="bg-gradient-to-br from-cyan-50/80 to-blue-50/60 hover:shadow-xl transition-all duration-300">
                 <CardContent className="pt-6">
                   <div className="flex flex-col items-center text-center mb-4">
-                    <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center mb-4 overflow-hidden">
+                    <div className="w-24 h-24 rounded-full bg-gradient-to-br from-cyan-500/30 to-cyan-400/20 flex items-center justify-center mb-4 overflow-hidden">
                       <Image
                         src="/professional-woman-frontend-developer.jpg"
                         alt="Merilyne Mbong"
@@ -1221,13 +1287,13 @@ export default function Home() {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h3 className="font-semibold text-xl text-card-foreground">Merilyne Mbong</h3>
+                    <h3 className="font-semibold text-xl text-slate-900">Merilyne Mbong</h3>
                     <div className="flex flex-wrap gap-2 justify-center mt-2 mb-3">
                       <Badge variant="secondary" className="text-xs">
                         Frontend Lead (Web)
                       </Badge>
                     </div>
-                    <p className="text-sm text-muted-foreground mb-4">
+                    <p className="text-sm text-slate-600 mb-4">
                       Frontend Lead specializing in React web applications, responsive design, and PWA implementation
                     </p>
                   </div>
@@ -1304,10 +1370,10 @@ export default function Home() {
               </Card>
 
               {/* Komalpreet Kaur */}
-              <Card className="border border-border/50 bg-card hover:shadow-xl transition-all duration-300">
+              <Card className="bg-gradient-to-br from-green-50/80 to-emerald-50/60 border-green-200/40 hover:shadow-xl transition-all duration-300">
                 <CardContent className="pt-6">
                   <div className="flex flex-col items-center text-center mb-4">
-                    <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center mb-4 overflow-hidden">
+                    <div className="w-24 h-24 rounded-full bg-gradient-to-br from-green-500/30 to-green-400/20 flex items-center justify-center mb-4 overflow-hidden">
                       <Image
                         src="/professional-woman-full-stack-developer.jpg"
                         alt="Komalpreet Kaur"
@@ -1316,13 +1382,13 @@ export default function Home() {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h3 className="font-semibold text-xl text-card-foreground">Komalpreet Kaur</h3>
+                    <h3 className="font-semibold text-xl text-slate-900">Komalpreet Kaur</h3>
                     <div className="flex flex-wrap gap-2 justify-center mt-2 mb-3">
                       <Badge variant="secondary" className="text-xs">
                         Full Stack Developer
                       </Badge>
                     </div>
-                    <p className="text-sm text-muted-foreground mb-4">
+                    <p className="text-sm text-slate-600 mb-4">
                       Full Stack Developer specializing in RESTful API development, business logic, and authentication
                       services
                     </p>
@@ -1400,10 +1466,10 @@ export default function Home() {
               </Card>
 
               {/* Samuel Braun */}
-              <Card className="border border-border/50 bg-card hover:shadow-xl transition-all duration-300">
+              <Card className="bg-gradient-to-br from-amber-50/80 to-orange-50/60 border-amber-200/40 hover:shadow-xl transition-all duration-300">
                 <CardContent className="pt-6">
                   <div className="flex flex-col items-center text-center mb-4">
-                    <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center mb-4 overflow-hidden">
+                    <div className="w-24 h-24 rounded-full bg-gradient-to-br from-amber-500/30 to-amber-400/20 flex items-center justify-center mb-4 overflow-hidden">
                       <Image
                         src="/professional-man-database-developer.jpg"
                         alt="Samuel Braun"
@@ -1412,7 +1478,7 @@ export default function Home() {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h3 className="font-semibold text-xl text-card-foreground">Samuel Braun</h3>
+                    <h3 className="font-semibold text-xl text-slate-900">Samuel Braun</h3>
                     <div className="flex flex-wrap gap-2 justify-center mt-2 mb-3">
                       <Badge variant="secondary" className="text-xs">
                         Database Architect
@@ -1421,7 +1487,7 @@ export default function Home() {
                         Backend Specialist
                       </Badge>
                     </div>
-                    <p className="text-sm text-muted-foreground mb-4">
+                    <p className="text-sm text-slate-600 mb-4">
                       Database & Backend Specialist focusing on PostgreSQL architecture, query optimization, and data
                       security
                     </p>
