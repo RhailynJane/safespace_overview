@@ -37,9 +37,9 @@ export default function Home() {
       {/* Header */}
       <header className="border-b border-border bg-card/80 backdrop-blur-md sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center shadow-sm">
-              <Heart className="w-5 h-5 text-primary-foreground" fill="currentColor" />
+          <div className="flex items-center gap-3">
+            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-primary/90 to-primary/70 flex items-center justify-center shadow-sm ring-1 ring-primary/30">
+              <Image src="/safespace-logo.png" alt="SafeSpace" width={28} height={28} className="rounded-lg object-contain" />
             </div>
             <span className="text-xl font-semibold text-foreground">SafeSpace</span>
           </div>
@@ -64,14 +64,24 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="py-24 md:py-32 bg-gradient-to-b from-accent/40 via-accent/20 to-background relative overflow-hidden">
+      <section className="py-24 md:py-32 bg-gradient-to-b from-[#f2f7ff] via-[#e7f1ff] to-white relative overflow-hidden">
         {/* Subtle decorative elements */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,oklch(0.85_0.08_165/0.15),transparent_50%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_60%,oklch(0.85_0.08_165/0.1),transparent_50%)]" />
-
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,oklch(0.92_0.05_225/0.34),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_78%_28%,oklch(0.9_0.04_200/0.28),transparent_55%)]" />
+        <div
+          className="absolute inset-0 opacity-35"
+          style={{
+            backgroundImage:
+              "linear-gradient(rgba(107,145,255,0.12) 1px, transparent 1px), linear-gradient(90deg, rgba(107,145,255,0.12) 1px, transparent 1px)",
+            backgroundSize: "58px 58px",
+          }}
+        />
+        <div className="absolute inset-x-10 top-20 h-64 bg-gradient-to-b from-white/45 via-sky-100/25 to-transparent blur-3xl" />
+        <div className="absolute -left-24 top-24 w-72 h-72 bg-sky-200/35 blur-3xl rounded-full" />
+        <div className="absolute -right-20 top-12 w-64 h-64 bg-blue-200/30 blur-3xl rounded-full" />
         <div className="container mx-auto px-4 relative">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6 shadow-sm">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/70 backdrop-blur border border-primary/20 text-primary text-sm font-medium mb-6 shadow-sm">
               <Shield className="w-4 h-4" />
               Mental Health & Wellness Platform
             </div>
@@ -88,21 +98,21 @@ export default function Home() {
             <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
               <Badge
                 variant="secondary"
-                className="gap-1.5 px-3 py-1.5 text-xs font-medium bg-card border border-border shadow-sm"
+                className="gap-1.5 px-3 py-1.5 text-xs font-medium bg-white/80 backdrop-blur border border-border shadow-sm"
               >
                 <Lock className="w-3 h-3" />
                 HIPAA Compliant
               </Badge>
               <Badge
                 variant="secondary"
-                className="gap-1.5 px-3 py-1.5 text-xs font-medium bg-card border border-border shadow-sm"
+                className="gap-1.5 px-3 py-1.5 text-xs font-medium bg-white/80 backdrop-blur border border-border shadow-sm"
               >
                 <Lock className="w-3 h-3" />
                 PIPEDA Compliant
               </Badge>
               <Badge
                 variant="secondary"
-                className="gap-1.5 px-3 py-1.5 text-xs font-medium bg-card border border-border shadow-sm"
+                className="gap-1.5 px-3 py-1.5 text-xs font-medium bg-white/80 backdrop-blur border border-border shadow-sm"
               >
                 <Shield className="w-3 h-3" />
                 End-to-End Encrypted
@@ -122,7 +132,7 @@ export default function Home() {
       </section>
 
       {/* Problem Section */}
-      <section id="problem" className="py-20 bg-card/50">
+      <section id="problem" className="py-20 bg-gradient-to-b from-white via-[#f7fbff] to-[#eef5ff] backdrop-blur-sm">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
@@ -133,7 +143,7 @@ export default function Home() {
             </div>
 
             <div className="grid md:grid-cols-3 gap-6">
-              <Card className="border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg bg-card">
+              <Card className="border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-xl bg-card">
                 <CardContent className="pt-6">
                   <div className="w-12 h-12 rounded-xl bg-destructive/10 flex items-center justify-center mb-4">
                     <AlertCircle className="w-6 h-6 text-destructive" />
@@ -147,7 +157,7 @@ export default function Home() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg bg-card">
+              <Card className="border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-xl bg-card">
                 <CardContent className="pt-6">
                   <div className="w-12 h-12 rounded-xl bg-destructive/10 flex items-center justify-center mb-4">
                     <Lock className="w-6 h-6 text-destructive" />
@@ -160,7 +170,7 @@ export default function Home() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg bg-card">
+              <Card className="border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-xl bg-card">
                 <CardContent className="pt-6">
                   <div className="w-12 h-12 rounded-xl bg-destructive/10 flex items-center justify-center mb-4">
                     <Users className="w-6 h-6 text-destructive" />
@@ -178,7 +188,7 @@ export default function Home() {
       </section>
 
       {/* Solution Overview */}
-      <section id="solution" className="py-20 bg-gradient-to-b from-background to-accent/30">
+      <section id="solution" className="py-20 bg-gradient-to-b from-[#f9fbff] via-[#f1f6ff] to-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
@@ -306,7 +316,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="features" className="py-20 bg-card/30">
+      <section id="features" className="py-20 bg-gradient-to-b from-white via-[#f6f9ff] to-[#edf4ff]">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -1006,7 +1016,7 @@ export default function Home() {
                   <div className="flex flex-col items-center text-center mb-4">
                     <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center mb-4 overflow-hidden">
                       <Image
-                        src="/professional-woman-developer.png"
+                        src="/rhailyn.png"
                         alt="Rhailyn Jane Cona"
                         width={96}
                         height={96}
@@ -1109,7 +1119,7 @@ export default function Home() {
                   <div className="flex flex-col items-center text-center mb-4">
                     <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center mb-4 overflow-hidden">
                       <Image
-                        src="/professional-woman-mobile-developer.jpg"
+                        src="/anne-marie.jpg"
                         alt="Anne Marie Ala"
                         width={96}
                         height={96}
