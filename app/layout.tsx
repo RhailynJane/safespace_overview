@@ -1,7 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" })
@@ -11,7 +10,6 @@ export const metadata: Metadata = {
   title: "SafeSpace - Your Daily Space for Insight, Support, and Growth",
   description:
     "SafeSpace unifies mood tracking, journaling, appointments, assessments, resources, peer interaction, and crisis access in one secure, HIPAA & PIPEDA compliant mental health platform.",
-  generator: "v0.app",
   icons: {
     icon: "/safespace-logo.png",
     apple: "/safespace-logo.png",
@@ -27,7 +25,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geist.variable} ${geistMono.variable} font-sans antialiased`}>
         {children}
-        <Analytics />
       </body>
     </html>
   )
