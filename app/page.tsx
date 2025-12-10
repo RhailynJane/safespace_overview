@@ -818,7 +818,7 @@ export default function Home() {
                   <div className="flex flex-col items-center text-center mb-4">
                     <div className="w-24 h-24 rounded-full bg-slate-100 flex items-center justify-center mb-4 overflow-hidden">
                       <Image
-                        src="/merilyne.png"
+                        src="/Merilyne.png"
                         alt="Merilyne Mbong"
                         width={96}
                         height={96}
@@ -864,7 +864,7 @@ export default function Home() {
                   <div className="flex flex-col items-center text-center mb-4">
                     <div className="w-24 h-24 rounded-full bg-slate-100 flex items-center justify-center mb-4 overflow-hidden">
                       <Image
-                        src="/komal.png"
+                        src="/Komal.png"
                         alt="Komalpreet Kaur"
                         width={96}
                         height={96}
@@ -911,7 +911,7 @@ export default function Home() {
                   <div className="flex flex-col items-center text-center mb-4">
                     <div className="w-24 h-24 rounded-full bg-slate-100 flex items-center justify-center mb-4 overflow-hidden">
                       <Image
-                        src="/samuel.png"
+                        src="/Samuel.png"
                         alt="Samuel Braun"
                         width={96}
                         height={96}
