@@ -13,21 +13,8 @@ export const metadata: Metadata = {
     "SafeSpace unifies mood tracking, journaling, appointments, assessments, resources, peer interaction, and crisis access in one secure, HIPAA & PIPEDA compliant mental health platform.",
   generator: "v0.app",
   icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
+    icon: "/safespace-logo.png",
+    apple: "/safespace-logo.png",
   },
 }
 
