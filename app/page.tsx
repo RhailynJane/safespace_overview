@@ -88,8 +88,8 @@ export default function Home() {
       <header className="border-b border-slate-200 bg-white sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-xl bg-slate-900 flex items-center justify-center shadow-sm">
-              <Image src="/safespace-logo.png" alt="SafeSpace" width={22} height={22} className="rounded-lg object-contain" />
+            <div className="w-9 h-9 rounded-xl bg-white flex items-center justify-center shadow-sm overflow-hidden">
+              <Image src="/safespace-logo.png" alt="SafeSpace" width={36} height={36} className="object-cover" />
             </div>
             <span className="text-xl font-light text-slate-900 tracking-tight">SafeSpace</span>
           </div>
@@ -147,11 +147,9 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="text-base bg-slate-900 hover:bg-slate-800 text-white" asChild>
                 <a
-                  href="https://safe-space-app-jw5essqhv-crhailynjane-1452s-projects.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#platform"
                 >
-                  View Web Platform
+                  Explore Platform
                 </a>
               </Button>
               <Button
